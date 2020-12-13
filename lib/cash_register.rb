@@ -17,7 +17,7 @@ class CashRegister
 
     def items
         items_array = Array.new
-        @items.map do |item|
+        @items.each do |item|
             item[:quantity].times do
                 items_array << item[:title]
             end
