@@ -32,6 +32,7 @@ class CashRegister
         end
     end
 
+
     def void_last_transaction
         @items.pop
         @total = @items.reduce(0.0) do |sum, item|
